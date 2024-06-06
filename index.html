@@ -3,50 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <title>Spike</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --color-bg: #000000; /* Установим фон шапки в черный цвет */
+            --color-text: #ffffff; /* Установим текст в белый цвет для контраста */
+            --color-border-normal: #333333;
+            --border-width: 1px;
+            --color-primary: #007bff;
+            --color-primary-dark: #0056b3;
+            --drawer-bg: rgba(0, 0, 0, 0.5);
+            --transition-duration: 0.3s;
+            --hover-bg: #555555; /* Цвет фона при наведении */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        ._58ce83d8 {
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 99;
+            position: fixed;
+            background: var(--color-bg);
+            min-height: 70px;
+            align-items: center;
+            border-bottom: var(--border-width) solid var(--color-border-normal);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+            transition: background var(--transition-duration);
+        }
+
+        .um-nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .um-nav-left {
+            display: flex;
+            align-items: center;
+            margin-right: auto; /* Двигает левый блок влево */
+        }
+
+        .um-nav-left a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .um-nav-left img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .um-nav-left span {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--color-text);
+        }
+
+        .um-nav-center {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .um-nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .um-nav-links li {
+            margin-right: 20px;
+        }
+
+        .um-nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background var(--transition-duration), color var(--transition-duration);
+        }
+
+        .um-nav-links a:hover {
+            background: var(--hover-bg); /* Цвет фона при наведении */
+            color: #fff;
+        }
+
+        .um-nav-drawerTrigger {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            display: none;
+        }
+
+        .um-nav-drawer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--drawer-bg);
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity var(--transition-duration);
+        }
+
+        .um-nav-drawer.um-visible {
+            display: flex;
+            opacity: 1;
+        }
+
+        .um-nav-drawer header {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 20px;
+            background: var(--color-bg);
+        }
+
+        .um-nav-drawer .um-nav-drawerClose {
+            font-size: 24px;
+            line-height: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .um-drawer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .um-drawer-links li {
+            margin-bottom: 20px;
+        }
+
+        .um-drawer-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background var(--transition-duration), color var(--transition-duration);
+        }
+
+        .um-drawer-links a:hover {
+            background: var(--hover-bg); /* Цвет фона при наведении */
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .um-nav-links {
+                display: none;
+            }
+            .um-nav-drawerTrigger {
+                display: block;
+            }
+            .um-nav-center {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-    .header {
-        background-color: #fff;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo {
-        max-width: 100px;
-        height: auto;
-    }
-    .buttons {
-        display: flex;
-        justify-content: flex-end;
-        flex-grow: 1;
-        gap: 10px;
-    }
-    .button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-</style>
-</head>
-<body>
-<div class="header">
-    <img src="logo.png" alt="Лого" class="logo">
-    <div class="buttons">
-        <a href="#" class="button">Кнопка 1</a>
-        <a href="#" class="button">Кнопка 2</a>
-        <a href="#" class="button">Кнопка 3</a>
-        <a href="#" class="button">Кнопка 4</a>
+<section class="_58ce83d8">
+    <div class="um-nav-wrapper">
+        <div class="um-nav-left">
+            <a href="#">
+                <img src="https://cdn.discordapp.com/attachments/1247891572062945290/1248170833868755014/Hard_team.png?ex=6662b12c&is=66615fac&hm=379cb4d771c5a95996b3b4c6d45865f4ca4257810ec156a3732e0d8377a9b3f7&" alt="11.svg">
+                <span>Hard Team</span>
+            </a>
+        </div>
+        <div class="um-nav-center">
+            <ul class="um-nav-links">
+                <li><a href="#">Чоловіче</a></li>
+                <li><a href="#">Жіноче</a></li>
+                <li><a href="#">Дитяче</a></li>
+            </ul>
+        </div>
+        <button id="sq18hsndh2-drawerTrigger" class="um-nav-drawerTrigger" title="Open Mobile Menu">☰</button>
     </div>
-</div>
+    <div id="sq18hsndh2-drawer" class="um-nav-drawer">
+        <header>
+            <button class="um-nav-drawerClose" title="Close Mobile Menu">✖</button>
+        </header>
+        <ul class="um-drawer-links">
+            <li><a href="#">Чоловіче</a></li>
+            <li><a href="#">Жіноче</a></li>
+            <li><a href="#">Дитяче</a></li>
+        </ul>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const drawerTrigger = document.getElementById('sq18hsndh2-drawerTrigger');
+        const drawer = document.getElementById('sq18hsndh2-drawer');
+        const drawerClose = document.querySelector('.um-nav-drawerClose');
+
+        drawerTrigger.addEventListener('click', function() {
+            drawer.classList.add('um-visible');
+            setTimeout(() => {
+                drawer.style.opacity = '1';
+            }, 10);
+        });
+
+        drawerClose.addEventListener('click', function() {
+            drawer.style.opacity = '0';
+            setTimeout(() => {
+                drawer.classList.remove('um-visible');
+            }, parseFloat(getComputedStyle(drawer).getPropertyValue('--transition-duration')) * 1000);
+        });
+
+        drawer.addEventListener('click', function(e) {
+            if (e.target === drawer) {
+                drawer.style.opacity = '0';
+                setTimeout(() => {
+                    drawer.classList.remove('um-visible');
+                }, parseFloat(getComputedStyle(drawer).getPropertyValue('--transition-duration')) * 1000);
+            }
+        });
+    });
+</script>
 </body>
 </html>
