@@ -1,16 +1,11 @@
-img{
-    height: 1000px;
-    width: 1200px;
-    margin: 100px;
-}
+
 body{
     background-color:white;
 }
-
-
-
-
-
+.card img{
+    aspect-ratio:  1 /1 ;
+    object-fit: cover;
+}
 
 
 
