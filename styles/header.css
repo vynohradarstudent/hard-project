@@ -1,6 +1,6 @@
 :root {
     --color-bg: #ffffff; /* Фон шапочки ) */
-    --color-text: rgb(245, 128, 8); /* Цвет текста для сайтика */
+    --color-text: rgb(0, 0, 0); /* Цвет текста для сайтика */
     --color-border-normal: #333333;
     --border-width: 3px;
     --color-primary: #007bff;
