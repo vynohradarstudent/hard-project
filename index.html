@@ -4,203 +4,23 @@
     <meta charset="UTF-8">
     <title>Hard Team | Robocode</title>
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        :root {
-            --color-bg: #ffffff; /* Фон шапочки ) */
-            --color-text: rgb(245, 128, 8); /* Цвет текста для сайтика */
-            --color-border-normal: #333333;
-            --border-width: 3px;
-            --color-primary: #007bff;
-            --color-primary-dark: #0056b3;
-            --drawer-bg: rgba(0, 0, 0, 0.5);
-            --transition-duration: 0.3s;
-            --hover-bg: #f58008; /* Цвет фона сайтика */
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: rgb(255, 255, 255);
-        }
-
-        ._58ce83d8 {
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            z-index: 99;
-            position: fixed;
-            background: var(--color-bg);
-            min-height: 70px;
-            align-items: center;
-            border-bottom: var(--border-width) solid var(--color-border-normal);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 0 20px;
-            transition: background var(--transition-duration);
-        }
-
-        .um-nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .um-nav-left {
-            display: flex;
-            align-items: center;
-            margin-right: auto; /* В лево блок */
-        }
-
-        .um-nav-left a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .um-nav-left img {
-            height: 45px;
-            margin-right: -77px;
-        }
-
-        .um-nav-left span {
-            font-size: 25px;
-            font-weight: bold;
-            color: var(--color-text);
-        }
-
-        .um-nav-center {
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
-        }
-
-        .um-nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .um-nav-links li {
-            margin-right: 15px;
-        }
-
-        .um-nav-links a {
-            text-decoration: none;
-            color: var(--color-text);
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background var(--transition-duration), color var(--transition-duration);
-        }
-
-        .um-nav-links a:hover {
-            background: var(--hover-bg); /* Светитса когда наводиш мишку на кнопочку */
-            color: #e10c0c;
-        }
-
-        .um-nav-drawerTrigger {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 24px;
-            display: none;
-        }
-
-        .um-nav-drawer {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--drawer-bg);
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
-            opacity: 0;
-            transition: opacity var(--transition-duration);
-        }
-
-        .um-nav-drawer.um-visible {
-            display: flex;
-            opacity: 1;
-        }
-
-        .um-nav-drawer header {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            padding: 20px;
-            background: var(--color-bg);
-        }
-
-        .um-nav-drawer .um-nav-drawerClose {
-            font-size: 24px;
-            line-height: 24px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .um-drawer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .um-drawer-links li {
-            margin-bottom: 20px;
-        }
-
-        .um-drawer-links a {
-            text-decoration: none;
-            color: var(--color-text);
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background var(--transition-duration), color var(--transition-duration);
-        }
-
-        .um-drawer-links a:hover {
-            background: var(--hover-bg); /* Цвет фона когда наводиш */
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .um-nav-links {
-                display: none;
-            }
-            .um-nav-drawerTrigger {
-                display: block;
-            }
-            .um-nav-center {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles/header.css">
 </head>
+
 <body>
 <section class="_58ce83d8">
     <div class="um-nav-wrapper">
         <div class="um-nav-left">
             <a href="index.html">
-                <img src="https://cdn.discordapp.com/attachments/1247891572062945290/1248170833868755014/Hard_team.png?ex=6662b12c&is=66615fac&hm=379cb4d771c5a95996b3b4c6d45865f4ca4257810ec156a3732e0d8377a9b3f7&" alt="Loading...">
+                <img id="img78" src="https://cdn.discordapp.com/attachments/1134778333431861289/1249327144899706970/IMG_8057.png?ex=6666e612&is=66659492&hm=a4ee0204f893f48a278ea14bf1a14a0de342048f41694ed143c7fa0823a256b0&" alt="Loading...">
                 <span>Hard Team | Robocode</span>
             </a>
         </div>
         <div class="um-nav-center">
             <ul class="um-nav-links">
-                <li><a href="pages/Чоловіче.html">Чоловіче</a></li>
-                <li><a href="pages/Жіноче.html">Жіноче</a></li>
-                <li><a href="pages/Дитяче.html">Дитяче</a></li>
+                <li><a href="pages/man.html">Чоловіче</a></li>
+                <li><a href="pages/woman.html">Жіноче</a></li>
+                <li><a href="pages/kids.html">Дитяче</a></li>
             </ul>
         </div>
         <button id="sq18hsndh2-drawerTrigger" class="um-nav-drawerTrigger" title="Open Mobile Menu">☰</button>
@@ -210,9 +30,9 @@
             <button class="um-nav-drawerClose" title="Close Mobile Menu">✖</button>
         </header>
         <ul class="um-drawer-links">
-            <li><a href="pages/Чоловіче.html">Чоловіче</a></li>
-            <li><a href="#">Жіноче</a></li>
-            <li><a href="#">Дитяче</a></li>
+            <li><a href="pages/man.html">Чоловіче</a></li>
+            <li><a href="pages/woman.html">Жіноче</a></li>
+            <li><a href="pages/kids.html">Дитяче</a></li>
         </ul>
     </div>
 </section>
