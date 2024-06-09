@@ -49,7 +49,21 @@ st {
     font-weight: 1000;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.btn btn-primary{
-    color: black;
+
+i{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
