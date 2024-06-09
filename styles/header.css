@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     z-index: 99;
-    position: fixed;
+    position: sticky;
     background: var(--color-bg);
     min-height: 70px;
     align-items: center;
