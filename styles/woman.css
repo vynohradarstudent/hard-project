@@ -1,0 +1,35 @@
+.nav{
+
+}
+.carousel slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.carus{
+    width: 100vw;
+    height: 100vh;
+}
+
+.carus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carus p {
+    color: black;
+}
+.carus .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+
+#carouselExampleCaptions{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
