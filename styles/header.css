@@ -1,0 +1,179 @@
+:root {
+    --color-bg: #ffffff; /* Фон шапочки ) */
+    --color-text: rgb(245, 128, 8); /* Цвет текста для сайтика */
+    --color-border-normal: #333333;
+    --border-width: 3px;
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --drawer-bg: rgba(0, 0, 0, 0.5);
+    --transition-duration: 0.3s;
+    --hover-bg: #f58008; /* Цвет фона сайтика */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+._58ce83d8 {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+    background: var(--color-bg);
+    min-height: 70px;
+    align-items: center;
+    border-bottom: var(--border-width) solid var(--color-border-normal);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    transition: background var(--transition-duration);
+}
+
+.um-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.um-nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* В лево блок */
+}
+
+.um-nav-left a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.um-nav-left img {
+    height: 45px;
+}
+
+.um-nav-left span {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.um-nav-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.um-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.um-nav-links li {
+    margin-right: 15px;
+}
+
+.um-nav-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background var(--transition-duration), color var(--transition-duration);
+}
+
+.um-nav-links a:hover {
+    background: var(--hover-bg); /* Светитса когда наводиш мишку на кнопочку */
+    color: #e10c0c;
+}
+
+.um-nav-drawerTrigger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+}
+
+.um-nav-drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--drawer-bg);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity var(--transition-duration);
+}
+
+.um-nav-drawer.um-visible {
+    display: flex;
+    opacity: 1;
+}
+
+.um-nav-drawer header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+    background: var(--color-bg);
+}
+
+.um-nav-drawer .um-nav-drawerClose {
+    font-size: 24px;
+    line-height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.um-drawer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.um-drawer-links li {
+    margin-bottom: 20px;
+}
+
+.um-drawer-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background var(--transition-duration), color var(--transition-duration);
+}
+
+.um-drawer-links a:hover {
+    background: var(--hover-bg); /* Цвет фона когда наводиш */
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .um-nav-links {
+        display: none;
+    }
+    .um-nav-drawerTrigger {
+        display: block;
+    }
+    .um-nav-center {
+        display: none;
+    }
+}
