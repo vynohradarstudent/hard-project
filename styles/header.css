@@ -7,7 +7,7 @@
     --color-primary-dark: #0056b3;
     --drawer-bg: rgba(0, 0, 0, 0.5);
     --transition-duration: 0.3s;
-    --hover-bg: #f58008; /* Цвет фона сайтика */
+    --hover-bg: #000000; /* Цвет фона кнопки когда наводиш своей мишкой */
 }
 
 body {
@@ -92,7 +92,7 @@ body {
 
 .um-nav-links a:hover {
     background: var(--hover-bg); /* Светитса когда наводиш мишку на кнопочку */
-    color: #e10c0c;
+    color: #000000;
 }
 
 .um-nav-drawerTrigger {
