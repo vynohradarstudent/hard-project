@@ -71,6 +71,9 @@ button{
     object-fit: cover;
 }
 h5:hover{
+    transition: all 1s;
+    text-shadow: black 0px 0 2px;
+    transform: scale(2);
 
 }
 
