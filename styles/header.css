@@ -240,50 +240,6 @@ footer {
     margin: 0;
 }
 
-
-.full-screen-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-container {
-    position: relative;
-    width: 100%;
-    background-color: #000;
-    overflow: hidden;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
 /* О ПРИВЕТ */
 body {
     font-family: Arial, sans-serif;
