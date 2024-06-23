@@ -92,7 +92,7 @@ body {
 
 .um-nav-links a:hover {
     background: var(--hover-bg); /* Светитса когда наводиш мишку на кнопочку */
-    color: #000000;
+    color: #fffcfc;
 }
 
 .um-nav-drawerTrigger {
