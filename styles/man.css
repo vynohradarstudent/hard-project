@@ -1,47 +1,53 @@
-.nav{
+.nav {
 
 }
-.carousel slide{
+
+.carousel slide {
     display: flex;
     flex-direction: column;
 }
 
-.carus{
+.carus {
     width: 100vw;
     height: 100vh;
 }
 
-.carus img{
+.carus img {
     width: 100%;
     height: 100%;
 }
+
 .carus p {
     color: black;
 }
- .carus .carousel-inner{
+
+.carus .carousel-inner {
     width: 100%;
     height: 100%;
 }
 
-#carouselExampleCaptions{
+#carouselExampleCaptions {
     width: 100%;
     height: 100%;
 }
 
-.carousel-item{
+.carousel-item {
     width: 100%;
     height: 100%;
 }
+
 .carus h5 {
     color: black;
 }
-.d-grid gap-2 d-md-block{
+
+.d-grid gap-2 d-md-block {
     color: black;
     display: flex;
     flex-direction: column;
 
 }
-.d-grid gap-2 d-md-block:hover{
+
+.d-grid gap-2 d-md-block:hover {
 
 }
 
@@ -53,21 +59,80 @@ st {
     align-items: center;
 }
 
-i{
+i {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-button{
+
+button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
-.card img{
-    aspect-ratio:  1 /1 ;
+
+.card img {
+    aspect-ratio: 1 /1;
     object-fit: cover;
+}
+
+h5:hover {
+    transition: all 1s;
+    text-shadow: black 0px 0 2px;
+    transform: scale(2);
+
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+    gap: 10px;
+    margin: 50px;
+
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.o {
+    grid-row: 1 / 3;
+    grid-column: 1/ 3;
+}
+
+.t{
+    grid-column: 3/ 5;
+    grid-row: 1 / 4;
+
+}
+.card img:hover{
+    transition: all 1s;
+    transform: scale(2);
+}
+.main div{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.main .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-shadow: black 0px 0 2px;
+}
+.main p{
+    position: relative;
+    bottom: 30px;
+
+    text-shadow: white 0px 0 2px;
+
 }
 
