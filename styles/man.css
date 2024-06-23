@@ -99,6 +99,9 @@ h5:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
+
 }
 
 .o {
@@ -114,11 +117,17 @@ h5:hover {
 .card img:hover{
     transition: all 1s;
     transform: scale(2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
+
+
 }
 .main div{
     display: flex;
     align-items: end;
     justify-content: center;
+
+
 }
 .main .btn{
     display: flex;
@@ -135,141 +144,5 @@ h5:hover {
     text-shadow: white 0px 0 2px;
 
 }
-.footer-container {
-    padding: 20px;
-    background-color: white; /* Фон */
-    color: black; /* ТексТиК */
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.footer-section h4 {
-    margin-bottom: 10px;
-}
-
-.footer-section p, .footer-section a {
-    color: #555; /* ФуТеР и тЕкСт */
-    margin: 5px 0;
-}
-
-.footer-section a:hover {
-    color: black; /* сИлКи дАдАдА нЕ УдАлЯй */
-}
-
-.subscribe-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.subscribe-form input[type="email"] {
-    padding: 10px;
-    width: 300px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.subscribe-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.subscribe-form button:hover {
-    background-color: #555;
-}
-
-.popular-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.popular-item {
-    flex: 1 1 calc(33% - 20px);
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.popular-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.popular-item h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.popular-item p {
-    margin-bottom: 15px;
-    color: #666;
-}
-
-.popular-item button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.popular-item button:hover {
-    background-color: #555;
-}
-
-.popular-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.services-list {
-    list-style: none;
-    padding: 0;
-}
-
-.services-list li {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input, .contact-form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
