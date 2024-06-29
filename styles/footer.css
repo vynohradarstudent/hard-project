@@ -1,0 +1,67 @@
+footer {
+    background-color: #ffffff;
+    color: #020202;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #e61313;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 3px solid #000000;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-container {
+    padding: 20px;
+    background-color: white; /* Фон */
+    color: black; /* ТексТиК */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #555; /* ФуТеР и тЕкСт */
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    color: black; /* сИлКи дАдАдА нЕ УдАлЯй */
+}
