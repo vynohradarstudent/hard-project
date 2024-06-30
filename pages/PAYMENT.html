@@ -35,7 +35,7 @@
         form {
             margin-top: 20px;
         }
-        input[type="text"], input[type="email"], input[type="tel"], select {
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
             width: 100%;
             padding: 12px;
             margin-bottom: 15px;
@@ -45,7 +45,7 @@
             font-size: 16px;
             transition: border-color 0.3s ease;
         }
-        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus, select:focus {
             outline: none;
             border-color: #4CAF50;
         }
@@ -112,8 +112,8 @@
         <input type="email" id="email" name="email" placeholder="Ваш email" required>
         <input type="text" id="address" name="address" placeholder="Адрес доставки" required>
         <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-        <input type="tel" id="card" name="card" placeholder="Номер карты" required>
-        <input type="tel" id="cvv" name="cvv" placeholder="CVV/CVC" required>
+        <input type="text" id="card" name="card" placeholder="Номер карты" required>
+        <input type="password" id="cvv" name="cvv" placeholder="CVV/CVC" maxlength="3" required>
 
         <h3>Способ доставки</h3>
         <div class="shipping-options">
