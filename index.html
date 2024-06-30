@@ -3,204 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Hard Team | Robocode</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        :root {
-            --color-bg: #000000; /* Фон шапочки ) */
-            --color-text: rgba(255, 55, 55, 0.55); /* Цвет текста для сайтика */
-            --color-border-normal: #333333;
-            --border-width: 3px;
-            --color-primary: #007bff;
-            --color-primary-dark: #0056b3;
-            --drawer-bg: rgba(0, 0, 0, 0.5);
-            --transition-duration: 0.3s;
-            --hover-bg: #633636; /* Цвет фона сайтика */
-        }
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: rgb(0, 0, 0);
-        }
-
-        ._58ce83d8 {
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            z-index: 99;
-            position: fixed;
-            background: var(--color-bg);
-            min-height: 70px;
-            align-items: center;
-            border-bottom: var(--border-width) solid var(--color-border-normal);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 0 20px;
-            transition: background var(--transition-duration);
-        }
-
-        .um-nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .um-nav-left {
-            display: flex;
-            align-items: center;
-            margin-right: auto; /* В лево блок */
-        }
-
-        .um-nav-left a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .um-nav-left img {
-            height: 45px;
-            margin-right: -77px;
-        }
-
-        .um-nav-left span {
-            font-size: 25px;
-            font-weight: bold;
-            color: var(--color-text);
-        }
-
-        .um-nav-center {
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
-        }
-
-        .um-nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .um-nav-links li {
-            margin-right: 15px;
-        }
-
-        .um-nav-links a {
-            text-decoration: none;
-            color: var(--color-text);
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background var(--transition-duration), color var(--transition-duration);
-        }
-
-        .um-nav-links a:hover {
-            background: var(--hover-bg); /* Светитса когда наводиш мишку на кнопочку */
-            color: #e10c0c;
-        }
-
-        .um-nav-drawerTrigger {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 24px;
-            display: none;
-        }
-
-        .um-nav-drawer {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--drawer-bg);
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
-            opacity: 0;
-            transition: opacity var(--transition-duration);
-        }
-
-        .um-nav-drawer.um-visible {
-            display: flex;
-            opacity: 1;
-        }
-
-        .um-nav-drawer header {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            padding: 20px;
-            background: var(--color-bg);
-        }
-
-        .um-nav-drawer .um-nav-drawerClose {
-            font-size: 24px;
-            line-height: 24px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .um-drawer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .um-drawer-links li {
-            margin-bottom: 20px;
-        }
-
-        .um-drawer-links a {
-            text-decoration: none;
-            color: var(--color-text);
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background var(--transition-duration), color var(--transition-duration);
-        }
-
-        .um-drawer-links a:hover {
-            background: var(--hover-bg); /* Цвет фона когда наводиш */
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .um-nav-links {
-                display: none;
-            }
-            .um-nav-drawerTrigger {
-                display: block;
-            }
-            .um-nav-center {
-                display: none;
-            }
-        }
-    </style>
 </head>
+
 <body>
+<!-- Шапка -->
 <section class="_58ce83d8">
     <div class="um-nav-wrapper">
         <div class="um-nav-left">
             <a href="index.html">
-                <img src="https://cdn.discordapp.com/attachments/1247891572062945290/1248170833868755014/Hard_team.png?ex=6662b12c&is=66615fac&hm=379cb4d771c5a95996b3b4c6d45865f4ca4257810ec156a3732e0d8377a9b3f7&" alt="Loading...">
+                <img id="img78" src="images/IMG_8057.png" alt="Loading...">
                 <span>Hard Team | Robocode</span>
             </a>
         </div>
         <div class="um-nav-center">
             <ul class="um-nav-links">
-                <li><a href="Чоловіче.html">Чоловіче</a></li>
-                <li><a href="Жіноче.html">Жіноче</a></li>
-                <li><a href="Дитяче.html">Дитяче</a></li>
+                <li><a href="pages/man.html">Чоловіче</a></li>
+                <li><a href="pages/woman.html">Жіноче</a></li>
+                <li><a href="pages/kids.html">Дитяче</a></li>
             </ul>
         </div>
         <button id="sq18hsndh2-drawerTrigger" class="um-nav-drawerTrigger" title="Open Mobile Menu">☰</button>
@@ -210,42 +32,97 @@
             <button class="um-nav-drawerClose" title="Close Mobile Menu">✖</button>
         </header>
         <ul class="um-drawer-links">
-            <li><a href="Чоловіче.html">Чоловіче</a></li>
-            <li><a href="#">Жіноче</a></li>
-            <li><a href="#">Дитяче</a></li>
+            <li><a href="pages/man.html">Чоловіче</a></li>
+            <li><a href="pages/woman.html">Жіноче</a></li>
+            <li><a href="pages/kids.html">Дитяче</a></li>
         </ul>
     </div>
 </section>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const drawerTrigger = document.getElementById('sq18hsndh2-drawerTrigger');
-        const drawer = document.getElementById('sq18hsndh2-drawer');
-        const drawerClose = document.querySelector('.um-nav-drawerClose');
 
-        drawerTrigger.addEventListener('click', function() {
-            drawer.classList.add('um-visible');
-            setTimeout(() => {
-                drawer.style.opacity = '1';
-            }, 10);
-        });
+<!-- Ну тип привет ) -->
+<div class="welcome-message">
+    Добро пожаловать в Hard Team Robocode!
+</div>
 
-        drawerClose.addEventListener('click', function() {
-            drawer.style.opacity = '0';
-            setTimeout(() => {
-                drawer.classList.remove('um-visible');
-            }, parseFloat(getComputedStyle(drawer).getPropertyValue('--transition-duration')) * 1000);
-        });
+<!-- Хто ми? -->
+<div class="about-section">
+    <h2>О нас</h2>
+    <p>Hard Team - ето команда каторая решила открить свой магаз в интернете. </p>
+</div>
 
-        drawer.addEventListener('click', function(e) {
-            if (e.target === drawer) {
-                drawer.style.opacity = '0';
-                setTimeout(() => {
-                    drawer.classList.remove('um-visible');
-                }, parseFloat(getComputedStyle(drawer).getPropertyValue('--transition-duration')) * 1000);
-            }
-        });
-    });
-</script>
+<!-- Што ми делаем в етом мире? -->
+<div class="services-section">
+    <h2>Наши услуги</h2>
+    <ul class="services-list">
+        <li>Каталог товаров:
+            Полный список доступных товаров с подробным описанием, фотографиями и ценами.</li>
+        <li>Доставка:
+            Различные варианты доставки, включая экспресс-доставку и отслеживание посылок.</li>
+        <li>Возврат и обмен:
+            Условия и процесс возврата или обмена товаров.</li>
+        <li>Акции и скидки:
+            Специальные предложения, купоны и программы лояльности для клиентов.
+        </li>
+    </ul>
+</div>
+
+<!-- Штука тип с боксами де товари есть, а ти такой кликаеш и идет переход на другую страницу -->
+<div class="popular-items-section">
+    <h2>Популярные товари (обув)</h2>
+    <div class="popular-items">
+        <div class="popular-item">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c6d9d042-f0b9-46a3-bd1f-04e16541a1d9/buty-air-force-1-07-next-nature-7dl9fM.png" alt="Item 1">
+            <h3>КРОСІВКИ NIKE AIR FORCE (1'07 NEXT) </h3>
+            <p>4 690 ГРН</p>
+            <button>Купить</button>
+        </div>
+        <div class="popular-item">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c78d4d43-49d9-444c-9e56-84dd7b3e1b41/buty-meskie-air-force-1-07-lv8-6sDDG2.png" alt="Item 2">
+            <h3>КРОСІВКИ NIKE AIR FORCE (1'07 LV8)</h3>
+            <p>2 500 ГРН</p>
+            <button>Купить</button>
+        </div>
+        <!-- Я не продавец тож хз чо писать в заметки -->
+        <div class="popular-item">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/46d80e44-06c4-48b3-aebe-78b9e9067278/buty-air-force-1-07-next-nature-1nBNPq.png" alt="Item 3">
+            <h3>КРОСІВКИ NIKE AIR FORCE (1 LOW)</h3>
+            <p>6 529 ГРН</p>
+            <button>Купить</button>
+        </div>
+        <div class="popular-item">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c626a1ef-ebae-47b2-be6b-8706be6b95e5/buty-meskie-air-force-1-low-evo-rLlvX9.png" alt="Item 4">
+            <h3>КРОСІВКИ NIKE AIR FORCE (1 FN7793-100)</h3>
+            <p>5 600 ГРН</p>
+            <button>Купить</button>
+        </div>
+    </div>
+</div>
+
+<!-- Ну тип риска -->
+<div class="separator"></div>
+
+<!-- ООООО ЕТО ИМБА ПИАР СОЦСЕТЕЙ (ХОЧЕШ ПИАР СНИЗУ? Звони: 380 68 885 58 77) -->
+<footer class="footer-container">
+    <div class="footer-section">
+        <h4>О нас</h4>
+        <p>Онлайн магазин Hard Team Robocode.</p>
+    </div>
+    <div class="footer-section">
+        <h4>Контакты</h4>
+        <p>Электронная почта: daniil14.k@icloud.com</p>
+        <p>Телефон: +380 68 885 58 77</p>
+    </div>
+    <div class="footer-section">
+        <h4>Следите за нами</h4>
+        <a href="https://youtube.com/@jp_studio_game?si=YTaf-0FmXzbi4U9Y">YouTube</a>
+        <a href="https://www.twitch.tv/jp_studio_game">Twitch</a>
+        <a href="https://github.com/SpikeDeveloperGame">GitHub</a>
+    </div>
+    <div class="footer-section">
+        <h4>Статус серверов сайта - 🟠</h4>
+        <p><a href="https://robocode.statuspage.io/">Status</a></p>
+    </div>
+</footer>
 
 </body>
 </html>
